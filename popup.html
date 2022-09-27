@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="popup.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container" style="width: 450px;">
+        <div class="container" style="background-color: #C0C0C0;">
+            <div class="container mt-3">
+                <div class="row justify-content-md-center">
+                    <div class="col text-center">
+                        <img src="images/32.png" class="rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col text-center">
+                        <h3> Source Inspector</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col text-center">
+                    <p>This extension tells about whether the artcile is from renowned author or not.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container visually-hidden" id="all_data">
+            <div class="row justify-content-md-center">
+                <div class="col col-4">
+                    <p class="fw-bold text-end">Url:</p>
+                </div>
+                <div class="col">
+                    <p id="url"></p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-4">
+                    <p class="fw-bold text-end">News Channel:</p>
+                </div>
+                <div class="col">
+                    <p id="news_channel"></p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-4">
+                    <p class="fw-bold text-end">Author:</p>
+                </div>
+                <div class="col">
+                    <p id="author"></p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-4">
+                    <p class="fw-bold text-end">Result:</p>
+                </div>
+                <div class="col">
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-3" id="refreshcontainer">
+            <div class="row justify-content-md-center">
+                <div class="col text-center">
+                    <button id="reloadBtn" >Analyse Article</button>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+
+</html>

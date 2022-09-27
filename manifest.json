@@ -1,0 +1,32 @@
+{
+    "name": "NewsAgent: Detect Unreliable Articles",
+    "version": "1.0",
+    "description": "Finding Unreliable Articles",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js" 
+    },
+    "icons" : {
+        "128": "images/128.png"
+    },
+    "browser_action": {
+      "default_icon": {                
+        "16": "images/16.png"   
+      }
+    },
+	"permissions": [
+		"storage",
+        "activeTab",
+        "cookies", 
+        "nativeMessaging",
+        "tabs"
+	],
+    "action":{
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [                
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ]}
