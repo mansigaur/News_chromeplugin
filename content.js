@@ -1,3 +1,4 @@
+//JavaScript files that run in the context of web pages
 // sending message
 
     chrome.runtime.sendMessage({
