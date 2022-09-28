@@ -1,3 +1,4 @@
+// file for reacting to browser events and perform certain actions
 // chrome.runtime.onMessage.addListener(
 //     function(request, sender, sendResponse){
 //         var url = request.activeUrl;
